@@ -2,6 +2,9 @@
     "agents": [
         "gemini"
     ],
+    "packages": [
+        "filament/filament"
+    ],
     "skills": [
         "tailwindcss-development"
     ]

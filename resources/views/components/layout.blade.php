@@ -8,17 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @livewireStyles
 </head>
 <body class="antialiased bg-gray-50 font-sans">
     <div class="min-h-screen flex flex-col">
         <x-navbar />
 
-        <main class="flex-grow">
+        <main class="grow">
             {{ $slot }}
         </main>
 
         <x-footer />
     </div>
+    @livewireScripts
 </body>
 </html>
